@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>Centos7下搭建Web环境LAMP | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Centos7下搭建Web环境LAMP 安装Apache和无mysqli模块的php1 centos下使用yum安装LAMP yum安装无mysqli模块，需要编译安装 1.1使用yum安装（php无mysqli模块）参考博客 123456789101112yum -y install httpd 				#安装apachesystemctl start httpd.service		#开启apa">
+<meta name="keywords" content="整理环境搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos7下搭建Web环境LAMP">
+<meta property="og:url" content="http://yoursite.com/2018/09/07/Centos7下搭建Web环境LAMP/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Centos7下搭建Web环境LAMP 安装Apache和无mysqli模块的php1 centos下使用yum安装LAMP yum安装无mysqli模块，需要编译安装 1.1使用yum安装（php无mysqli模块）参考博客 123456789101112yum -y install httpd 				#安装apachesystemctl start httpd.service		#开启apa">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-07T01:43:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Centos7下搭建Web环境LAMP">
+<meta name="twitter:description" content="Centos7下搭建Web环境LAMP 安装Apache和无mysqli模块的php1 centos下使用yum安装LAMP yum安装无mysqli模块，需要编译安装 1.1使用yum安装（php无mysqli模块）参考博客 123456789101112yum -y install httpd 				#安装apachesystemctl start httpd.service		#开启apa">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Centos7下搭建Web环境LAMP" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Centos7下搭建Web环境LAMP" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/07/Centos7下搭建Web环境LAMP/" class="article-date">
   <time datetime="2018-09-07T01:41:06.000Z" itemprop="datePublished">2018-09-07</time>
@@ -75,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/07/Centos7下搭建Web环境LAMP/">Centos7下搭建Web环境LAMP</a>
+    <h1 class="article-title" itemprop="name">
+      Centos7下搭建Web环境LAMP
     </h1>
   
 
@@ -113,142 +116,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Mac安装hexo-github-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/25/Mac安装hexo-github-blog/" class="article-date">
-  <time datetime="2018-08-25T03:10:11.000Z" itemprop="datePublished">2018-08-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/25/Mac安装hexo-github-blog/">Mac安装hexo-github-blog</a>
-    </h1>
+    <a href="/2018/08/25/Mac安装hexo-github-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Mac安装hexo-github-blog</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="安装环境HomeBrew、npm、node"><a href="#安装环境HomeBrew、npm、node" class="headerlink" title="安装环境HomeBrew、npm、node"></a>安装环境HomeBrew、npm、node</h2><p><strong>1.安装HomeBrew</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation timed out//连不上外网</li>
-<li>使用ss后报错<br>curl: (35) Server aborted the SSL handshake<br><a href="https://www.jianshu.com/p/68efabd2e32b" target="_blank" rel="noopener">参考博客</a></li>
-</ul>
-<p><strong>2.安装node、更新npm</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install node </span><br><span class="line">npm install -g npm</span><br></pre></td></tr></table></figure>
-<p><strong>3.安装git</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
-<p><strong>4.安装hexo</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p> <strong>1.生成ssh_key</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
-<p> <strong>2.在github setting中配置对应的ssh_key_pub</strong></p>
-<ul>
-<li>github右上角用户图标 =&gt; setting =&gt; SSH and GPG keys =&gt; New SSH Key</li>
-</ul>
-<p><strong>3.测试ssh配置是否成功</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p> <strong>4.创建github repo</strong></p>
-<ul>
-<li><strong>repo name：</strong> (ower name).github.io</li>
-</ul>
-<p><strong>5.配置hexo项目</strong></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mkdir  (ower name).github.io</span><br><span class="line">cd  (ower name).github.io </span><br><span class="line">hexo init </span><br><span class="line"></span><br><span class="line">vi _config.yml </span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repository: git@github.com:(ower name)/(ower name).github.io.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
-<p> <strong>tips</strong></p>
-<ul>
-<li>在_config.yml中名/值中要有空格例如：type：（空格）git</li>
-<li>在第一次hexo d的之前，要有npm install hexo-deployer-git –save</li>
-</ul>
-<h2 id="hexo写blog"><a href="#hexo写blog" class="headerlink" title="hexo写blog"></a>hexo写blog</h2><ul>
-<li><p>hexo new “postName” #新建文章</p>
-</li>
-<li><p>hexo new page “pageName” #新建页面,还不清楚new post与new page有什么区别</p>
-</li>
-<li><p>hexo c #清空    </p>
-</li>
-<li><p>hexo g #生成</p>
-</li>
-<li><p>hexo d #上传</p>
-<p><strong>tips</strong></p>
-<ul>
-<li>在md文件的头部，名/值之间要留空格，尤其是tags: ***</li>
-</ul>
-</li>
-</ul>
-<p><a href="https://blog.csdn.net/qq_1050087728/article/details/69392515" target="_blank" rel="noopener">blog模版</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/25/Mac安装hexo-github-blog/" data-id="cjlrc784j00016hc3suf09pez" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始写博客了，不然都不知自己学了些什么/">开始写博客了，不然都不知自己学了些什么</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/25/hello-world/" class="article-date">
-  <time datetime="2018-08-25T02:41:05.000Z" itemprop="datePublished">2018-08-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/25/hello-world/" data-id="cjlrc784n00036hc31dznys64" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
