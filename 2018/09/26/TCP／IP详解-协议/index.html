@@ -5,15 +5,20 @@
   
 
   
-  <title>Tag: 开始写博客了，不然都不知自己学了些什么 | Hexo</title>
+  <title>TCP／IP详解 协议笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/开始写博客了，不然都不知自己学了些什么/index.html">
+  <meta name="description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 ##Internet地址">
+<meta name="keywords" content="技术更新迭代速度越来越快，然而其本质的东西还是没变，弄清原理，把握本质，才能保持清醒。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCP／IP详解 协议笔记">
+<meta property="og:url" content="http://yoursite.com/2018/09/26/TCP／IP详解-协议/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 ##Internet地址">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-12T01:06:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="TCP／IP详解 协议笔记">
+<meta name="twitter:description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 ##Internet地址">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,40 +65,74 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/08/25/Mac安装hexo-github-blog/" class="archive-article-date">
-  <time datetime="2018-08-25T03:10:11.000Z" itemprop="datePublished">Aug 25</time>
+        <section id="main"><article id="post-TCP／IP详解-协议" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/26/TCP／IP详解-协议/" class="article-date">
+  <time datetime="2018-09-26T01:12:43.000Z" itemprop="datePublished">2018-09-26</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/25/Mac安装hexo-github-blog/">Mac安装hexo-github-blog</a>
+    <h1 class="article-title" itemprop="name">
+      TCP／IP详解 协议笔记
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="协议概述"><a href="#协议概述" class="headerlink" title="协议概述"></a>协议概述</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>国家事务或外交场合的正式程序或规则系统。（《新牛津词典》）</p>
+<p>设计是技术而不是科学。</p>
+<p>消息边界：</p>
+<pre><code>保留消息边界的协议：应用程序的“读”返回同样大小的写
+不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节）
+</code></pre><p>分层中的复用、封装和分解</p>
+<pre><code>主机实现所有层
+交换机实现物理层和链路层
+路由器实现物理层、链路层和网络层
+</code></pre><p>##Internet地址结构    </p>
+<p>tcp／ip书上文字太多，不太好理解</p>
+<p><a href="https://blog.csdn.net/qq_37653144/article/details/80344833" target="_blank" rel="noopener">Internet地址结构博客链接</a></p>
+<p>##链路层</p>
+<p>###网桥转发表与自学习方法</p>
+<p><a href="https://blog.csdn.net/be_solider/article/details/78886239" target="_blank" rel="noopener">网桥转发表与自学习方法博客链接</a></p>
+<p>###生成树协议</p>
+<p>stp与rstp</p>
+<p><a href="https://www.2cto.com/net/201303/198378.html" target="_blank" rel="noopener">生成树简介及STP原理详解</a></p>
+<p><a href="https://www.2cto.com/net/201303/198379.html" target="_blank" rel="noopener">RSTP原理详解及配置实例</a></p>
+<p>##地址解析协议ARP</p>
+<p>###免费ARP和地址冲突检测</p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/26/TCP／IP详解-协议/" data-id="cjn6rqr6q00016oc3x8eazfq4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术更新迭代速度越来越快，然而其本质的东西还是没变，弄清原理，把握本质，才能保持清醒。/">技术更新迭代速度越来越快，然而其本质的东西还是没变，弄清原理，把握本质，才能保持清醒。</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/08/30天自制操作系统-第一周/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">30天自制操作系统-第一周-mac</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
