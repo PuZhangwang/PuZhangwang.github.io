@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 ##Internet地址">
+<meta name="description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 Internet地址结构">
 <meta name="keywords" content="技术更新迭代速度越来越快，然而其本质的东西还是没变，弄清原理，把握本质，才能保持清醒。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TCP／IP详解 协议笔记">
 <meta property="og:url" content="http://yoursite.com/2018/09/26/TCP／IP详解-协议/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 ##Internet地址">
+<meta property="og:description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 Internet地址结构">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-12T01:06:02.000Z">
+<meta property="og:updated_time" content="2019-01-10T13:01:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP／IP详解 协议笔记">
-<meta name="twitter:description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 ##Internet地址">
+<meta name="twitter:description" content="协议概述定义国家事务或外交场合的正式程序或规则系统。（《新牛津词典》） 设计是技术而不是科学。 消息边界： 保留消息边界的协议：应用程序的“读”返回同样大小的写 不保留消息边界的协议（TCP）：应用程序的读功能返回应用程序请求（6次读，每次R个字节，每次读的都是固定字节） 分层中的复用、封装和分解 主机实现所有层 交换机实现物理层和链路层 路由器实现物理层、链路层和网络层 Internet地址结构">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -307,19 +307,13 @@
 <pre><code>主机实现所有层
 交换机实现物理层和链路层
 路由器实现物理层、链路层和网络层
-</code></pre><p>##Internet地址结构    </p>
-<p>tcp／ip书上文字太多，不太好理解</p>
+</code></pre><h2 id="Internet地址结构"><a href="#Internet地址结构" class="headerlink" title="Internet地址结构"></a>Internet地址结构</h2><p>tcp／ip书上文字太多，不太好理解</p>
 <p><a href="https://blog.csdn.net/qq_37653144/article/details/80344833" target="_blank" rel="noopener">Internet地址结构博客链接</a></p>
-<p>##链路层</p>
-<p>###网桥转发表与自学习方法</p>
-<p><a href="https://blog.csdn.net/be_solider/article/details/78886239" target="_blank" rel="noopener">网桥转发表与自学习方法博客链接</a></p>
-<p>###生成树协议</p>
-<p>stp与rstp</p>
+<h2 id="链路层"><a href="#链路层" class="headerlink" title="链路层"></a>链路层</h2><h3 id="网桥转发表与自学习方法"><a href="#网桥转发表与自学习方法" class="headerlink" title="网桥转发表与自学习方法"></a>网桥转发表与自学习方法</h3><p><a href="https://blog.csdn.net/be_solider/article/details/78886239" target="_blank" rel="noopener">网桥转发表与自学习方法博客链接</a></p>
+<h3 id="生成树协议"><a href="#生成树协议" class="headerlink" title="生成树协议"></a>生成树协议</h3><p>stp与rstp</p>
 <p><a href="https://www.2cto.com/net/201303/198378.html" target="_blank" rel="noopener">生成树简介及STP原理详解</a></p>
 <p><a href="https://www.2cto.com/net/201303/198379.html" target="_blank" rel="noopener">RSTP原理详解及配置实例</a></p>
-<p>##地址解析协议ARP</p>
-<p>###免费ARP和地址冲突检测</p>
-
+<h2 id="地址解析协议ARP"><a href="#地址解析协议ARP" class="headerlink" title="地址解析协议ARP"></a>地址解析协议ARP</h2><h3 id="免费ARP和地址冲突检测"><a href="#免费ARP和地址冲突检测" class="headerlink" title="免费ARP和地址冲突检测"></a>免费ARP和地址冲突检测</h3>
       
     </div>
     
@@ -330,7 +324,7 @@
         <p><span>本文标题:</span><a href="/2018/09/26/TCP／IP详解-协议/">TCP／IP详解 协议笔记</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小王</a></p>
         <p><span>发布时间:</span>2018-09-26, 09:12:43</p>
-        <p><span>最后更新:</span>2018-10-12, 09:06:02</p>
+        <p><span>最后更新:</span>2019-01-10, 21:01:57</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/09/26/TCP／IP详解-协议/" title="TCP／IP详解 协议笔记">http://yoursite.com/2018/09/26/TCP／IP详解-协议/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/09/26/TCP／IP详解-协议/　　作者: 小王" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -366,7 +360,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#协议概述"><span class="toc-number">1.</span> <span class="toc-text">协议概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-number">1.1.</span> <span class="toc-text">定义</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#协议概述"><span class="toc-number">1.</span> <span class="toc-text">协议概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-number">1.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Internet地址结构"><span class="toc-number">2.</span> <span class="toc-text">Internet地址结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链路层"><span class="toc-number">3.</span> <span class="toc-text">链路层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#网桥转发表与自学习方法"><span class="toc-number">3.1.</span> <span class="toc-text">网桥转发表与自学习方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成树协议"><span class="toc-number">3.2.</span> <span class="toc-text">生成树协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#地址解析协议ARP"><span class="toc-number">4.</span> <span class="toc-text">地址解析协议ARP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#免费ARP和地址冲突检测"><span class="toc-number">4.1.</span> <span class="toc-text">免费ARP和地址冲突检测</span></a></li></ol></li></ol>
         
     </div>
     <style>
