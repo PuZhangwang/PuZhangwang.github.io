@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="C/C++ （MIT opencourse）">
+<meta name="description" content="C/C++ （MIT opencourse）Course goal: to help proficient programmers understand how and when to use C and C++. day1C/C++被认为是老的，过时的，但是其效率是最高的 ####安装valgrind—mac123456789//valgrind内存泄漏检测工具，编译安装valgrind报错//">
 <meta name="keywords" content="项目弄完了，可以自己充充电了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C&#x2F;C++编程总结一">
 <meta property="og:url" content="http://yoursite.com/2019/01/10/C-C-编程总结一/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="C/C++ （MIT opencourse）">
+<meta property="og:description" content="C/C++ （MIT opencourse）Course goal: to help proficient programmers understand how and when to use C and C++. day1C/C++被认为是老的，过时的，但是其效率是最高的 ####安装valgrind—mac123456789//valgrind内存泄漏检测工具，编译安装valgrind报错//">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-10T13:01:19.000Z">
+<meta property="og:updated_time" content="2019-01-10T14:38:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C&#x2F;C++编程总结一">
-<meta name="twitter:description" content="C/C++ （MIT opencourse）">
+<meta name="twitter:description" content="C/C++ （MIT opencourse）Course goal: to help proficient programmers understand how and when to use C and C++. day1C/C++被认为是老的，过时的，但是其效率是最高的 ####安装valgrind—mac123456789//valgrind内存泄漏检测工具，编译安装valgrind报错//">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -298,7 +298,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="C-C-（MIT-opencourse）"><a href="#C-C-（MIT-opencourse）" class="headerlink" title="C/C++ （MIT opencourse）"></a>C/C++ （MIT opencourse）</h2>
+        <h2 id="C-C-（MIT-opencourse）"><a href="#C-C-（MIT-opencourse）" class="headerlink" title="C/C++ （MIT opencourse）"></a>C/C++ （MIT opencourse）</h2><p>Course goal: to help proficient programmers understand how and when to use C and C++.</p>
+<h3 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h3><p>C/C++被认为是老的，过时的，但是其效率是最高的</p>
+<p>####安装valgrind—mac<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//valgrind内存泄漏检测工具，编译安装valgrind报错</span><br><span class="line">//解决方案如下</span><br><span class="line">brew edit valgrind</span><br><span class="line">修改head下的url为git://sourceware.org/git/valgrind.git</span><br><span class="line">brew update</span><br><span class="line">brew install --HEAD valgrind</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">valgrind --tool=memcheck --leak-check=full --show-reachable=yes ./run_hello</span><br></pre></td></tr></table></figure></p>
+<p>####使用gcc、gdb、valgrind</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">vim hello.c</span><br><span class="line"></span><br><span class="line">gcc -o run_hello hello.c</span><br><span class="line"></span><br><span class="line">./run_hello</span><br><span class="line"></span><br><span class="line">//使用valgrind检查run_hello是否内存泄漏,最终会发现有400bytes的泄漏</span><br><span class="line">valgrind --tool=memcheck --leak-check=full --show-reachable=yes ./run_hello</span><br></pre></td></tr></table></figure>
+<p>hello.c</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()   </span><br><span class="line">&#123;   </span><br><span class="line">    int *x = (int *)malloc(100 * sizeof(int));</span><br><span class="line">    x[0] = 0;</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -309,7 +315,7 @@
         <p><span>本文标题:</span><a href="/2019/01/10/C-C-编程总结一/">C/C++编程总结一</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小王</a></p>
         <p><span>发布时间:</span>2019-01-10, 20:56:20</p>
-        <p><span>最后更新:</span>2019-01-10, 21:01:19</p>
+        <p><span>最后更新:</span>2019-01-10, 22:38:51</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/01/10/C-C-编程总结一/" title="C/C++编程总结一">http://yoursite.com/2019/01/10/C-C-编程总结一/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/01/10/C-C-编程总结一/　　作者: 小王" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -339,7 +345,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#C-C-（MIT-opencourse）"><span class="toc-number">1.</span> <span class="toc-text">C/C++ （MIT opencourse）</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#C-C-（MIT-opencourse）"><span class="toc-number">1.</span> <span class="toc-text">C/C++ （MIT opencourse）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#day1"><span class="toc-number">1.1.</span> <span class="toc-text">day1</span></a></li></ol></li></ol>
         
     </div>
     <style>
